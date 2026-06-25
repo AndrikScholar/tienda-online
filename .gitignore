@@ -1,0 +1,12 @@
+# Configuración local sensible
+config/db.php.local
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Dependencias (si en el futuro se agrega Composer)
+/vendor/
+
+# Logs
+*.log
