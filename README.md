@@ -1,12 +1,12 @@
 # Tienda en Línea
 
-Sistema web de comercio electrónico que permite a los clientes registrarse, iniciar sesión, consultar el catálogo de productos, seleccionarlos de distintas formas, gestionar su carrito de compras y finalizar la compra capturando la información de pago y envío a domicilio. El inventario se actualiza automáticamente cada vez que se confirma una compra.
+esta pagina que hice es un Sistema web de comercio electrónico que permite a los clientes registrarse, iniciar sesión, consultar el catálogo de productos, seleccionarlos de distintas formas, gestionar su carrito de compras y finalizar la compra capturando la información de pago y envío a domicilio. El inventario se actualiza automáticamente cada vez que se confirma una compra.
 
 ---
 
 ## Introducción
 
-El comercio electrónico es hoy una de las formas más comunes de comprar y vender productos. Este proyecto académico tiene como objetivo diseñar e implementar una aplicación web de tienda en línea que cubra el flujo completo de un cliente: desde la creación de su cuenta hasta la confirmación de su compra, pasando por la consulta del catálogo, la selección de productos y el registro de los datos necesarios para el envío.
+El comercio electrónico es hoy una de las formas más comunes de comprar y vender productos. Este proyecto académico tiene como objetivo diseñar e implementar una aplicación web de tienda en línea que cubra el flujo completo de un cliente: desde la creación de su cuenta hasta la confirmación de su compra, pasando por la consulta del catálogo, la selección de productos y el registro de los datos necesarios para el envío. creo yo que esto es como el estandar basico para cualquier pagina web moderna funcional, añadi productos con fotos que a mi me parecian graciosas para igual tener un mayor impacto visual en las personas que se metieran en la pagina, si alguien quisiera modificar dichas fotos seria muy facil ya que solo tendrian que modificar las URLS
 
 El documento presente describe el análisis, diseño e implementación del sistema, incluyendo sus requisitos, modelo de datos, arquitectura, prototipo de interfaz y las instrucciones necesarias para instalarlo y operarlo.
 
@@ -464,6 +464,8 @@ El script completo de creación se encuentra en [`database/schema.sql`](database
 ---
 
 ## Conclusión
+
+Creo que hacer este proyecto me ayudo mucho a aprender y a reforsar conocimientos que yo ya tenia pero que habia olvidado por falta de practica, hubieron cosas que se me dificultaron como el checkout o volver a utilizar SQL pero nada muy grave, casi todo me parecio entretenido y educativo, lo unico que no me gusto hacer mucho fueron los diagramas de relacion y usar figma.
 
 El desarrollo de este proyecto permitió aplicar de forma práctica el proceso completo de análisis, diseño e implementación de un sistema de software: desde la identificación de requisitos funcionales y no funcionales, hasta el modelado de la base de datos y la elección justificada de una arquitectura en capas. Trabajar con PHP y MySQL ayudó a reforzar conceptos clave como el uso de sentencias preparadas para prevenir inyección SQL, el manejo seguro de contraseñas mediante hash, y el uso de transacciones para mantener la integridad de los datos cuando varias tablas se modifican como parte de una misma operación (la compra).
 
