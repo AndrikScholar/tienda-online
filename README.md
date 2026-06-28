@@ -303,7 +303,17 @@ graph TD
 
 ## Diseño de Interfaz (Prototipo)
 
-El prototipo de interfaz se implementó directamente como pantallas funcionales en HTML/CSS dentro de la propia aplicación (en lugar de un mockup estático), de manera que el diseño visual y la funcionalidad de login se entregan en una sola pieza. El flujo de navegación entre pantallas es el siguiente:
+Antes de programar la aplicación se elaboró un prototipo de las pantallas principales en **Figma**, con el fin de definir la distribución de los elementos, los formularios y el flujo de navegación. A partir de este prototipo se implementaron después las pantallas funcionales en HTML/CSS dentro de la propia aplicación.
+
+**Prototipo — Login y Registro**
+
+![Prototipo en Figma de las pantallas de inicio de sesión y registro](docs/screenshots/mockup-login-registro.png)
+
+**Prototipo — Catálogo, Carrito y Checkout**
+
+![Prototipo en Figma del catálogo, el carrito y el formulario de dirección de envío](docs/screenshots/mockup-catalogo.png)
+
+El flujo de navegación entre pantallas es el siguiente:
 
 ```mermaid
 graph LR
@@ -328,11 +338,55 @@ graph LR
 
 ---
 
+## Capturas del Sistema en Funcionamiento
+
+A continuación se muestran capturas de la aplicación ya implementada y en ejecución, siguiendo el flujo completo del cliente.
+
+**1. Registro de usuario**
+
+El cliente captura sus datos personales para crear una cuenta.
+
+![Formulario de registro de un nuevo usuario](docs/screenshots/registro.png)
+
+**2. Confirmación de cuenta creada**
+
+El sistema confirma que la cuenta se creó correctamente e invita a iniciar sesión.
+
+![Mensaje de cuenta creada exitosamente](docs/screenshots/registro-exitoso.png)
+
+**3. Sesión iniciada**
+
+Una vez autenticado, la barra de navegación muestra el carrito, el saludo al usuario y la opción de cerrar sesión.
+
+![Barra de navegación con la sesión del usuario iniciada](docs/screenshots/sesion-iniciada.png)
+
+**4. Catálogo de productos**
+
+El catálogo muestra los productos disponibles con su categoría, precio y existencias, además del buscador, el filtro por categoría y el ordenamiento.
+
+![Catálogo de productos con buscador, filtros y tarjetas de producto](docs/screenshots/catalogo.png)
+
+**5. Carrito de compras**
+
+El cliente puede revisar los productos seleccionados, actualizar la cantidad o eliminarlos, y ver el total antes de comprar.
+
+![Carrito de compras con productos, cantidades, subtotales y total](docs/screenshots/carrito.png)
+
+**6. Finalizar compra (checkout)**
+
+El sistema muestra el resumen del pedido y el formulario de dirección de envío para confirmar la compra.
+
+![Pantalla de checkout con resumen del pedido y formulario de dirección de envío](docs/screenshots/checkout.png)
+
+---
+
 ## Estructura del Proyecto
 
 ```
 tienda-online/
 ├── README.md
+├── docs/
+│   └── screenshots/            # Capturas de pantalla usadas en el README
 ├── database/
 │   └── schema.sql              # Script de creación de la BD y datos de ejemplo
 ├── config/
